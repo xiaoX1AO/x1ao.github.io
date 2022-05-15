@@ -1,0 +1,430 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="theme-color" content="#0078E7"><meta name="author" content="yln"><meta name="copyright" content="yln"><meta name="generator" content="Hexo 5.2.0"><meta name="theme" content="hexo-theme-yun"><title>数电 | yln'blog</title><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@900&amp;display=swap" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/star-markdown-css@0.1.22/dist/yun/yun-markdown.min.css"><script src="//at.alicdn.com/t/font_1140697_ed8vp4atwoj.js" async></script><script src="https://cdn.jsdelivr.net/npm/scrollreveal/dist/scrollreveal.min.js" defer></script><script>document.addEventListener("DOMContentLoaded", () => {
+  [".post-card",".post-content img"].forEach((target)=> {
+    ScrollReveal().reveal(target);
+  })
+});
+</script><link class="aplayer-style-marker" rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.css"><script class="aplayer-script-marker" src="https://cdn.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.js" defer></script><script class="meting-script-marker" src="https://cdn.jsdelivr.net/npm/meting@1/dist/Meting.min.js" defer></script><link id="light-prism-css" rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.20.0/themes/prism.css" media="(prefers-color-scheme: light)"><link id="dark-prism-css" rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.20.0/themes/prism-tomorrow.css" media="(prefers-color-scheme: dark)"><link rel="shortcut icon" type="image/svg+xml" href="/yun.svg"><link rel="mask-icon" href="/yun.svg" color="#0078E7"><link rel="alternate icon" href="/yun.ico"><link rel="preload" href="/css/hexo-theme-yun.css" as="style"><link rel="preload" href="/js/utils.js" as="script"><link rel="preload" href="/js/hexo-theme-yun.js" as="script"><link rel="prefetch" href="/js/sidebar.js" as="script"><link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin><script id="yun-config">
+    const Yun = window.Yun || {};
+    window.CONFIG = {"hostname":"www.blog.yln956.top","root":"/","title":"筱&的&博客","version":"1.4.0","mode":"auto","copycode":true,"page":{"isPost":true},"anonymous_image":"https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/avatar/none.jpg","say":{"api":"/data/sentences.json"},"local_search":{"path":"/search.xml"},"fireworks":{"colors":["148,0,211","255,165,0","255,69,0","0,0,205","255,240,245","186,85,211"]}};
+  </script><link rel="stylesheet" href="/css/hexo-theme-yun.css"><script src="/js/utils.js"></script><script src="/js/hexo-theme-yun.js"></script><link rel="alternate" href="/atom.xml" title="yln'blog" type="application/atom+xml"><script>(function(){
+  var bp = document.createElement('script');
+  var curProtocol = window.location.protocol.split(':')[0];
+  if (curProtocol === 'https') {
+    bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else {
+    bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+  var s = document.getElementsByTagName("script")[0];
+  s.parentNode.insertBefore(bp, s);
+})();</script><meta name="description" content="数电大题基本固定，弄会就没啥问题了 一、概述一些应用 模拟与数字 模拟信号：时间上和幅度上都连续变化的信号  数字信号：时间上和幅度上都断续变化的信号  数字逻辑电路研究的两大任务是:分析、设计  根据一个电路有无记忆功能，数字逻辑电路可以分为组合逻辑电路和时序逻辑电路两种类型。   二、数制与码制进制转换（应该都会吧） 编码 编码：按一定的方式将0、1数码进行编排来表示特定的含义,这种方式称为编">
+<meta property="og:type" content="article">
+<meta property="og:title" content="数电">
+<meta property="og:url" content="http://www.blog.yln956.top/2021/04/19/%E6%95%B0%E7%94%B5/index.html">
+<meta property="og:site_name" content="yln&#39;blog">
+<meta property="og:description" content="数电大题基本固定，弄会就没啥问题了 一、概述一些应用 模拟与数字 模拟信号：时间上和幅度上都连续变化的信号  数字信号：时间上和幅度上都断续变化的信号  数字逻辑电路研究的两大任务是:分析、设计  根据一个电路有无记忆功能，数字逻辑电路可以分为组合逻辑电路和时序逻辑电路两种类型。   二、数制与码制进制转换（应该都会吧） 编码 编码：按一定的方式将0、1数码进行编排来表示特定的含义,这种方式称为编">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://www.blog.yln956.top/2021/04/19/%E6%95%B0%E7%94%B5/image-20210605113057712.png">
+<meta property="og:image" content="http://www.blog.yln956.top/2021/04/19/%E6%95%B0%E7%94%B5/image-20210605114143612.png">
+<meta property="og:image" content="http://www.blog.yln956.top/2021/04/19/%E6%95%B0%E7%94%B5/image-20210605114436414.png">
+<meta property="og:image" content="http://www.blog.yln956.top/2021/04/19/%E6%95%B0%E7%94%B5/image-20210605114627618.png">
+<meta property="og:image" content="http://www.blog.yln956.top/2021/04/19/%E6%95%B0%E7%94%B5/image-20210605131631714.png">
+<meta property="og:image" content="http://www.blog.yln956.top/2021/04/19/%E6%95%B0%E7%94%B5/image-20210605131659789.png">
+<meta property="og:image" content="http://www.blog.yln956.top/2021/04/19/%E6%95%B0%E7%94%B5/image-20210605133155190.png">
+<meta property="og:image" content="http://www.blog.yln956.top/2021/04/19/%E6%95%B0%E7%94%B5/image-20210606002509311.png">
+<meta property="og:image" content="http://www.blog.yln956.top/2021/04/19/%E6%95%B0%E7%94%B5/image-20210608233949955.png">
+<meta property="og:image" content="http://www.blog.yln956.top/2021/04/19/%E6%95%B0%E7%94%B5/image-20210608234023034.png">
+<meta property="og:image" content="http://www.blog.yln956.top/2021/04/19/%E6%95%B0%E7%94%B5/image-20210608234044547.png">
+<meta property="og:image" content="http://www.blog.yln956.top/2021/04/19/%E6%95%B0%E7%94%B5/image-20210608234106581.png">
+<meta property="og:image" content="http://www.blog.yln956.top/2021/04/19/%E6%95%B0%E7%94%B5/image-20210607010305035.png">
+<meta property="og:image" content="http://www.blog.yln956.top/2021/04/19/%E6%95%B0%E7%94%B5/image-20210607010734760.png">
+<meta property="og:image" content="http://www.blog.yln956.top/2021/04/19/%E6%95%B0%E7%94%B5/image-20210607010748653.png">
+<meta property="og:image" content="http://www.blog.yln956.top/2021/04/19/%E6%95%B0%E7%94%B5/image-20210607010851110.png">
+<meta property="og:image" content="http://www.blog.yln956.top/2021/04/19/%E6%95%B0%E7%94%B5/image-20210607012517276.png">
+<meta property="og:image" content="http://www.blog.yln956.top/2021/04/19/%E6%95%B0%E7%94%B5/image-20210607012545593.png">
+<meta property="og:image" content="http://www.blog.yln956.top/2021/04/19/%E6%95%B0%E7%94%B5/image-20210607012610883.png">
+<meta property="og:image" content="http://www.blog.yln956.top/2021/04/19/%E6%95%B0%E7%94%B5/image-20210607012622099.png">
+<meta property="og:image" content="http://www.blog.yln956.top/2021/04/19/%E6%95%B0%E7%94%B5/image-20210609000208323.png">
+<meta property="og:image" content="http://www.blog.yln956.top/2021/04/19/%E6%95%B0%E7%94%B5/image-20210609000219999.png">
+<meta property="og:image" content="http://www.blog.yln956.top/2021/04/19/%E6%95%B0%E7%94%B5/image-20210609000250191.png">
+<meta property="og:image" content="http://www.blog.yln956.top/2021/04/19/%E6%95%B0%E7%94%B5/image-20210609000318137.png">
+<meta property="og:image" content="http://www.blog.yln956.top/2021/04/19/%E6%95%B0%E7%94%B5/image-20210609000331189.png">
+<meta property="og:image" content="http://www.blog.yln956.top/2021/04/19/%E6%95%B0%E7%94%B5/image-20210609000349331.png">
+<meta property="og:image" content="http://www.blog.yln956.top/2021/04/19/%E6%95%B0%E7%94%B5/image-20210609000404083.png">
+<meta property="og:image" content="http://www.blog.yln956.top/2021/04/19/%E6%95%B0%E7%94%B5/image-20210609005958127.png">
+<meta property="og:image" content="http://www.blog.yln956.top/2021/04/19/%E6%95%B0%E7%94%B5/image-20210609010007518.png">
+<meta property="og:image" content="http://www.blog.yln956.top/2021/04/19/%E6%95%B0%E7%94%B5/image-20210609010027691.png">
+<meta property="og:image" content="http://www.blog.yln956.top/2021/04/19/%E6%95%B0%E7%94%B5/image-20210609010038910.png">
+<meta property="og:image" content="http://www.blog.yln956.top/2021/04/19/%E6%95%B0%E7%94%B5/image-20210609010052606.png">
+<meta property="og:image" content="http://www.blog.yln956.top/2021/04/19/%E6%95%B0%E7%94%B5/image-20210609010108445.png">
+<meta property="og:image" content="http://www.blog.yln956.top/2021/04/19/%E6%95%B0%E7%94%B5/image-20210609010122974.png">
+<meta property="og:image" content="http://www.blog.yln956.top/2021/04/19/%E6%95%B0%E7%94%B5/image-20210609010130045.png">
+<meta property="og:image" content="http://www.blog.yln956.top/2021/04/19/%E6%95%B0%E7%94%B5/image-20210609010145593.png">
+<meta property="og:image" content="http://www.blog.yln956.top/2021/04/19/%E6%95%B0%E7%94%B5/image-20210609010216822.png">
+<meta property="og:image" content="http://www.blog.yln956.top/2021/04/19/%E6%95%B0%E7%94%B5/image-20210609010227985.png">
+<meta property="og:image" content="http://www.blog.yln956.top/2021/04/19/%E6%95%B0%E7%94%B5/image-20210609010247731.png">
+<meta property="og:image" content="http://www.blog.yln956.top/2021/04/19/%E6%95%B0%E7%94%B5/image-20210608003914653.png">
+<meta property="og:image" content="http://www.blog.yln956.top/2021/04/19/%E6%95%B0%E7%94%B5/image-20210610085054069.png">
+<meta property="og:image" content="http://www.blog.yln956.top/2021/04/19/%E6%95%B0%E7%94%B5/image-20210610012739204.png">
+<meta property="og:image" content="http://www.blog.yln956.top/2021/04/19/%E6%95%B0%E7%94%B5/image-20210610012750990.png">
+<meta property="og:image" content="http://www.blog.yln956.top/2021/04/19/%E6%95%B0%E7%94%B5/image-20210610012904211.png">
+<meta property="og:image" content="http://www.blog.yln956.top/2021/04/19/%E6%95%B0%E7%94%B5/image-20210610012942711.png">
+<meta property="og:image" content="http://www.blog.yln956.top/2021/04/19/%E6%95%B0%E7%94%B5/image-20210610085758987.png">
+<meta property="og:image" content="http://www.blog.yln956.top/2021/04/19/%E6%95%B0%E7%94%B5/image-20210610085810283.png">
+<meta property="og:image" content="http://www.blog.yln956.top/2021/04/19/%E6%95%B0%E7%94%B5/image-20210610085819674.png">
+<meta property="og:image" content="http://www.blog.yln956.top/2021/04/19/%E6%95%B0%E7%94%B5/image-20210610090132171.png">
+<meta property="og:image" content="http://www.blog.yln956.top/2021/04/19/%E6%95%B0%E7%94%B5/image-20210610090226919.png">
+<meta property="og:image" content="http://www.blog.yln956.top/2021/04/19/%E6%95%B0%E7%94%B5/image-20210610090238572.png">
+<meta property="og:image" content="http://www.blog.yln956.top/2021/04/19/%E6%95%B0%E7%94%B5/image-20210609010327742.png">
+<meta property="og:image" content="http://www.blog.yln956.top/2021/04/19/%E6%95%B0%E7%94%B5/image-20210609010345454.png">
+<meta property="og:image" content="http://www.blog.yln956.top/2021/04/19/%E6%95%B0%E7%94%B5/image-20210609010355340.png">
+<meta property="og:image" content="http://www.blog.yln956.top/2021/04/19/%E6%95%B0%E7%94%B5/image-20210609010417569.png">
+<meta property="og:image" content="http://www.blog.yln956.top/2021/04/19/%E6%95%B0%E7%94%B5/image-20210609010426191.png">
+<meta property="og:image" content="http://www.blog.yln956.top/2021/04/19/%E6%95%B0%E7%94%B5/image-20210609010443574.png">
+<meta property="og:image" content="http://www.blog.yln956.top/2021/04/19/%E6%95%B0%E7%94%B5/image-20210609010453701.png">
+<meta property="og:image" content="http://www.blog.yln956.top/2021/04/19/%E6%95%B0%E7%94%B5/image-20210609010522661.png">
+<meta property="og:image" content="http://www.blog.yln956.top/2021/04/19/%E6%95%B0%E7%94%B5/image-20210609010532640.png">
+<meta property="og:image" content="http://www.blog.yln956.top/2021/04/19/%E6%95%B0%E7%94%B5/image-20210609010559567.png">
+<meta property="og:image" content="http://www.blog.yln956.top/2021/04/19/%E6%95%B0%E7%94%B5/image-20210609010610866.png">
+<meta property="og:image" content="http://www.blog.yln956.top/2021/04/19/%E6%95%B0%E7%94%B5/image-20210610092311171.png">
+<meta property="og:image" content="http://www.blog.yln956.top/2021/04/19/%E6%95%B0%E7%94%B5/image-20210610092808818.png">
+<meta property="og:image" content="http://www.blog.yln956.top/2021/04/19/%E6%95%B0%E7%94%B5/image-20210610094000415.png">
+<meta property="og:image" content="http://www.blog.yln956.top/2021/04/19/%E6%95%B0%E7%94%B5/image-20210610094153311.png">
+<meta property="og:image" content="http://www.blog.yln956.top/2021/04/19/%E6%95%B0%E7%94%B5/image-20210610094400722.png">
+<meta property="og:image" content="http://www.blog.yln956.top/2021/04/19/%E6%95%B0%E7%94%B5/image-20210610094413914.png">
+<meta property="og:image" content="http://www.blog.yln956.top/2021/04/19/%E6%95%B0%E7%94%B5/image-20210610095448717.png">
+<meta property="og:image" content="http://www.blog.yln956.top/2021/04/19/%E6%95%B0%E7%94%B5/image-20210610100442903.png">
+<meta property="og:image" content="http://www.blog.yln956.top/2021/04/19/%E6%95%B0%E7%94%B5/image-20210610100502897.png">
+<meta property="og:image" content="http://www.blog.yln956.top/2021/04/19/%E6%95%B0%E7%94%B5/image-20210610102305346.png">
+<meta property="og:image" content="http://www.blog.yln956.top/2021/04/19/%E6%95%B0%E7%94%B5/image-20210610103103775.png">
+<meta property="og:image" content="http://www.blog.yln956.top/2021/04/19/%E6%95%B0%E7%94%B5/image-20210610103124958.png">
+<meta property="og:image" content="http://www.blog.yln956.top/2021/04/19/%E6%95%B0%E7%94%B5/image-20210610103135349.png">
+<meta property="og:image" content="http://www.blog.yln956.top/2021/04/19/%E6%95%B0%E7%94%B5/image-20210610103828532.png">
+<meta property="og:image" content="http://www.blog.yln956.top/2021/04/19/%E6%95%B0%E7%94%B5/image-20210610104024669.png">
+<meta property="og:image" content="http://www.blog.yln956.top/2021/04/19/%E6%95%B0%E7%94%B5/image-20210610105136697.png">
+<meta property="og:image" content="http://www.blog.yln956.top/2021/04/19/%E6%95%B0%E7%94%B5/image-20210610105150187.png">
+<meta property="og:image" content="http://www.blog.yln956.top/2021/04/19/%E6%95%B0%E7%94%B5/image-20210610105537422.png">
+<meta property="og:image" content="http://www.blog.yln956.top/2021/04/19/%E6%95%B0%E7%94%B5/image-20210610110820675.png">
+<meta property="og:image" content="http://www.blog.yln956.top/2021/04/19/%E6%95%B0%E7%94%B5/image-20210610120316073.png">
+<meta property="og:image" content="http://www.blog.yln956.top/2021/04/19/%E6%95%B0%E7%94%B5/image-20210609005759873.png">
+<meta property="og:image" content="http://www.blog.yln956.top/2021/04/19/%E6%95%B0%E7%94%B5/image-20210609005814797.png">
+<meta property="og:image" content="http://www.blog.yln956.top/2021/04/19/%E6%95%B0%E7%94%B5/image-20210609005827835.png">
+<meta property="og:image" content="http://www.blog.yln956.top/2021/04/19/%E6%95%B0%E7%94%B5/image-20210610123149829.png">
+<meta property="og:image" content="http://www.blog.yln956.top/2021/04/19/%E6%95%B0%E7%94%B5/image-20210610123247275.png">
+<meta property="og:image" content="http://www.blog.yln956.top/2021/04/19/%E6%95%B0%E7%94%B5/image-20210610123259064.png">
+<meta property="og:image" content="http://www.blog.yln956.top/2021/04/19/%E6%95%B0%E7%94%B5/image-20210610123534820.png">
+<meta property="og:image" content="http://www.blog.yln956.top/2021/04/19/%E6%95%B0%E7%94%B5/image-20210610124458800.png">
+<meta property="og:image" content="http://www.blog.yln956.top/2021/04/19/%E6%95%B0%E7%94%B5/image-20210610124542516.png">
+<meta property="og:image" content="http://www.blog.yln956.top/2021/04/19/%E6%95%B0%E7%94%B5/image-20210610124835317.png">
+<meta property="og:image" content="http://www.blog.yln956.top/2021/04/19/%E6%95%B0%E7%94%B5/image-20210610124620313.png">
+<meta property="og:image" content="http://www.blog.yln956.top/2021/04/19/%E6%95%B0%E7%94%B5/image-20210610124655285.png">
+<meta property="og:image" content="http://www.blog.yln956.top/2021/04/19/%E6%95%B0%E7%94%B5/image-20210610124804453.png">
+<meta property="og:image" content="http://www.blog.yln956.top/2021/04/19/%E6%95%B0%E7%94%B5/image-20210610124926602.png">
+<meta property="og:image" content="http://www.blog.yln956.top/2021/04/19/%E6%95%B0%E7%94%B5/image-20210609010636148.png">
+<meta property="og:image" content="http://www.blog.yln956.top/2021/04/19/%E6%95%B0%E7%94%B5/image-20210609010702018.png">
+<meta property="og:image" content="http://www.blog.yln956.top/2021/04/19/%E6%95%B0%E7%94%B5/image-20210609010720877.png">
+<meta property="og:image" content="http://www.blog.yln956.top/2021/04/19/%E6%95%B0%E7%94%B5/image-20210609010735691.png">
+<meta property="og:image" content="http://www.blog.yln956.top/2021/04/19/%E6%95%B0%E7%94%B5/image-20210609010745738.png">
+<meta property="og:image" content="http://www.blog.yln956.top/2021/04/19/%E6%95%B0%E7%94%B5/image-20210609010757248.png">
+<meta property="og:image" content="http://www.blog.yln956.top/2021/04/19/%E6%95%B0%E7%94%B5/image-20210609010809027.png">
+<meta property="og:image" content="http://www.blog.yln956.top/2021/04/19/%E6%95%B0%E7%94%B5/image-20210609010819469.png">
+<meta property="og:image" content="http://www.blog.yln956.top/2021/04/19/%E6%95%B0%E7%94%B5/image-20210609010836711.png">
+<meta property="og:image" content="http://www.blog.yln956.top/2021/04/19/%E6%95%B0%E7%94%B5/image-20210609010845782.png">
+<meta property="og:image" content="http://www.blog.yln956.top/2021/04/19/%E6%95%B0%E7%94%B5/image-20210609012207565.png">
+<meta property="og:image" content="http://www.blog.yln956.top/2021/04/19/%E6%95%B0%E7%94%B5/image-20210610172907541.png">
+<meta property="og:image" content="http://www.blog.yln956.top/2021/04/19/%E6%95%B0%E7%94%B5/image-20210610172951896.png">
+<meta property="article:published_time" content="2021-04-19T02:56:40.000Z">
+<meta property="article:modified_time" content="2021-09-03T05:56:58.384Z">
+<meta property="article:author" content="yln">
+<meta property="article:tag" content="复习">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://www.blog.yln956.top/2021/04/19/%E6%95%B0%E7%94%B5/image-20210605113057712.png"><script src="/js/ui/mode.js"></script></head><body><script defer src="https://cdn.jsdelivr.net/npm/animejs@latest"></script><script defer src="/js/ui/fireworks.js"></script><canvas class="fireworks"></canvas><div class="container"><a class="sidebar-toggle hty-icon-button" id="menu-btn"><div class="hamburger hamburger--spin" type="button"><span class="hamburger-box"><span class="hamburger-inner"></span></span></div></a><div class="sidebar-toggle sidebar-overlay"></div><aside class="sidebar"><script src="/js/sidebar.js"></script><ul class="sidebar-nav"><li class="sidebar-nav-item sidebar-nav-toc hty-icon-button sidebar-nav-active" data-target="post-toc-wrap" title="文章目录"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-list-ordered"></use></svg></li><li class="sidebar-nav-item sidebar-nav-overview hty-icon-button" data-target="site-overview-wrap" title="站点概览"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-passport-line"></use></svg></li></ul><div class="sidebar-panel" id="site-overview-wrap"><div class="site-info fix-top"><a class="site-author-avatar" href="/about/" title="yln"><img width="96" loading="lazy" src="/images/tou.jpg" alt="yln"><span class="site-author-status" title="永远相信美好的事情即将发生">😊</span></a><div class="site-author-name"><a href="/about/">yln</a></div><a class="site-name" href="/about/site.html">yln'blog</a><sub class="site-subtitle"></sub><div class="site-desciption">人生天地间，忽如远行客。</div></div><nav class="site-state"><a class="site-state-item hty-icon-button icon-home" href="/" title="首页"><span class="site-state-item-icon"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-home-4-line"></use></svg></span></a><div class="site-state-item"><a href="/archives/" title="归档"><span class="site-state-item-icon"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-archive-line"></use></svg></span><span class="site-state-item-count">28</span></a></div><div class="site-state-item"><a href="/categories/" title="分类"><span class="site-state-item-icon"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-folder-2-line"></use></svg></span><span class="site-state-item-count">28</span></a></div><div class="site-state-item"><a href="/tags/" title="标签"><span class="site-state-item-icon"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-price-tag-3-line"></use></svg></span><span class="site-state-item-count">16</span></a></div><a class="site-state-item hty-icon-button" href="/about/index.html" title="留言板"><span class="site-state-item-icon"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-clipboard-line"></use></svg></span></a></nav><hr style="margin-bottom:0.5rem"><div class="links-of-author"><a class="links-of-author-item hty-icon-button" rel="noopener" href="/atom.xml" title="RSS" target="_blank" style="color:orange"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-rss-line"></use></svg></a><a class="links-of-author-item hty-icon-button" rel="noopener" href="https://wpa.qq.com/msgrd?v=3&amp;uin=1071232072&amp;site=qq&amp;menu=yes" title="QQ" target="_blank" style="color:#12B7F5"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-qq-line"></use></svg></a><a class="links-of-author-item hty-icon-button" rel="noopener" href="https://github.com/YLN956" title="GitHub" target="_blank" style="color:#6e5494"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-github-line"></use></svg></a><a class="links-of-author-item hty-icon-button" rel="noopener" href="https://space.bilibili.com/50387172" title="哔哩哔哩" target="_blank" style="color:#FF8EB3"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-bilibili-line"></use></svg></a><a class="links-of-author-item hty-icon-button" rel="noopener" href="mailto:1071232072@qq.com" title="E-Mail" target="_blank" style="color:#8E71C1"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-mail-line"></use></svg></a><a class="links-of-author-item hty-icon-button" rel="noopener" href="https://music.163.com/#/user/home?id=404818423" title="网易云音乐" target="_blank" style="color:#C20C0C"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-netease-cloud-music-line"></use></svg></a></div><hr style="margin:0.5rem 1rem"><div class="links"><a class="links-item hty-icon-button" href="/links/" title="我的小伙伴们" style="color:dodgerblue"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-genderless-line"></use></svg></a><a class="links-item hty-icon-button" href="/girls/" title="喜欢的女孩子" style="color:hotpink"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-women-line"></use></svg></a></div><br><a class="links-item hty-icon-button" id="toggle-mode-btn" href="javascript:;" title="Mode" style="color: #f1cb64"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-contrast-2-line"></use></svg></a></div><div class="sidebar-panel sidebar-panel-active" id="post-toc-wrap"><div class="post-toc"><div class="post-toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E4%B8%80%E3%80%81%E6%A6%82%E8%BF%B0"><span class="toc-number">1.</span> <span class="toc-text">一、概述</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%80%E4%BA%9B%E5%BA%94%E7%94%A8"><span class="toc-number">1.1.</span> <span class="toc-text">一些应用</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%A8%A1%E6%8B%9F%E4%B8%8E%E6%95%B0%E5%AD%97"><span class="toc-number">1.2.</span> <span class="toc-text">模拟与数字</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E4%BA%8C%E3%80%81%E6%95%B0%E5%88%B6%E4%B8%8E%E7%A0%81%E5%88%B6"><span class="toc-number">2.</span> <span class="toc-text">二、数制与码制</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%BF%9B%E5%88%B6%E8%BD%AC%E6%8D%A2%EF%BC%88%E5%BA%94%E8%AF%A5%E9%83%BD%E4%BC%9A%E5%90%A7%EF%BC%89"><span class="toc-number">2.1.</span> <span class="toc-text">进制转换（应该都会吧）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%BC%96%E7%A0%81"><span class="toc-number">2.2.</span> <span class="toc-text">编码</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BA%8C-%E5%8D%81%E8%BF%9B%E5%88%B6%E7%A0%81"><span class="toc-number">2.2.1.</span> <span class="toc-text">二-十进制码</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%A5%87%E5%81%B6%E6%A0%A1%E9%AA%8C%E7%A0%81"><span class="toc-number">2.2.2.</span> <span class="toc-text">奇偶校验码</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%A0%BC%E9%9B%B7%E7%A0%81"><span class="toc-number">2.2.3.</span> <span class="toc-text">格雷码</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8E%9F%E7%A0%81%E3%80%81%E5%8F%8D%E7%A0%81%E5%92%8C%E8%A1%A5%E7%A0%81"><span class="toc-number">2.3.</span> <span class="toc-text">原码、反码和补码</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%80%E4%BA%9B%E9%A2%98%E7%9B%AE%E4%BB%A5%E5%8F%8A%E8%AF%A6%E8%A7%A3"><span class="toc-number">2.4.</span> <span class="toc-text">一些题目以及详解</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E4%B8%89%E3%80%81%E9%80%BB%E8%BE%91%E4%BB%A3%E6%95%B0%E5%9F%BA%E7%A1%80"><span class="toc-number">3.</span> <span class="toc-text">三、逻辑代数基础</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%80%BB%E8%BE%91%E7%AC%A6%E5%8F%B7%E5%AF%B9%E7%85%A7%EF%BC%88%E8%BF%99%E4%B8%AA%E8%A6%81%E7%9C%8B%E7%9A%84%E6%87%82%E4%BC%9A%E7%94%BB%EF%BC%89"><span class="toc-number">3.1.</span> <span class="toc-text">逻辑符号对照（这个要看的懂会画）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%80%BB%E8%BE%91%E4%BB%A3%E6%95%B0%E7%9A%84%E5%9F%BA%E6%9C%AC%E5%AE%9A%E5%BE%8B"><span class="toc-number">3.2.</span> <span class="toc-text">逻辑代数的基本定律</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%80%BB%E8%BE%91%E5%87%BD%E6%95%B0%E7%9A%84%E8%A1%A8%E7%A4%BA"><span class="toc-number">3.3.</span> <span class="toc-text">逻辑函数的表示</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%87%8D%E8%A6%81%E8%A7%84%E5%88%99"><span class="toc-number">3.3.1.</span> <span class="toc-text">重要规则</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%80%BB%E8%BE%91%E5%87%BD%E6%95%B0%E7%9A%84%E5%8C%96%E7%AE%80%E6%96%B9%E6%B3%95"><span class="toc-number">3.4.</span> <span class="toc-text">逻辑函数的化简方法</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%85%AC%E5%BC%8F%E6%B3%95%E5%8C%96%E7%AE%80"><span class="toc-number">3.4.1.</span> <span class="toc-text">公式法化简</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8D%A1%E8%AF%BA%E5%9B%BE%E5%8C%96%E7%AE%80"><span class="toc-number">3.4.2.</span> <span class="toc-text">卡诺图化简</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%80%E4%BA%9B%E9%A2%98%E7%9B%AE%E4%BB%A5%E5%8F%8A%E8%AF%A6%E8%A7%A3-1"><span class="toc-number">3.5.</span> <span class="toc-text">一些题目以及详解</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%9B%9B%E3%80%81VHDL"><span class="toc-number">4.</span> <span class="toc-text">四、VHDL</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%85%AD%E3%80%81%E7%BB%84%E5%90%88%E9%80%BB%E8%BE%91%E7%94%B5%E8%B7%AF"><span class="toc-number">5.</span> <span class="toc-text">六、组合逻辑电路</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8D%8A%E5%8A%A0%E5%99%A8"><span class="toc-number">5.1.</span> <span class="toc-text">半加器</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%85%A8%E5%8A%A0%E5%99%A8"><span class="toc-number">5.2.</span> <span class="toc-text">全加器</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-%E7%BA%BF-%EF%BC%8D-8-%E7%BA%BF%E8%AF%91%E7%A0%81%E5%99%A8-CT74LS138"><span class="toc-number">5.3.</span> <span class="toc-text">3 线 － 8 线译码器 CT74LS138</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8F%8C-4-%E9%80%89-1-%E6%95%B0%E6%8D%AE%E9%80%89%E6%8B%A9%E5%99%A8-CC74HC153"><span class="toc-number">5.4.</span> <span class="toc-text">双 4 选 1 数据选择器 CC74HC153</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#8-%E9%80%89-1-%E6%95%B0%E6%8D%AE%E9%80%89%E6%8B%A9%E5%99%A8-CT74LS151"><span class="toc-number">5.5.</span> <span class="toc-text">8 选 1 数据选择器 CT74LS151</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#MSI%E7%9A%84%E7%BB%84%E5%90%88%E9%80%BB%E8%BE%91%E7%94%B5%E8%B7%AF%E7%9A%84%E5%88%86%E6%9E%90%E4%B8%8E%E8%AE%BE%E8%AE%A1"><span class="toc-number">5.6.</span> <span class="toc-text">MSI的组合逻辑电路的分析与设计</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AB%9E%E4%BA%89%E5%92%8C%E5%86%92%E9%99%A9"><span class="toc-number">5.7.</span> <span class="toc-text">竞争和冒险</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%80%E4%BA%9B%E9%A2%98%E7%9B%AE%E4%BB%A5%E5%8F%8A%E8%AF%A6%E8%A7%A3-2"><span class="toc-number">5.8.</span> <span class="toc-text">一些题目以及详解</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E4%B8%83%E3%80%81%E9%9B%86%E6%88%90%E8%A7%A6%E5%8F%91%E5%99%A8"><span class="toc-number">6.</span> <span class="toc-text">七、集成触发器</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%A7%A6%E5%8F%91%E5%99%A8%E7%9A%84%E7%B1%BB%E5%9E%8B"><span class="toc-number">6.1.</span> <span class="toc-text">触发器的类型</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%9F%BA%E6%9C%ACRS%E8%A7%A6%E5%8F%91%E5%99%A8"><span class="toc-number">6.2.</span> <span class="toc-text">基本RS触发器</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%B3%A8%E6%84%8F"><span class="toc-number">6.2.1.</span> <span class="toc-text">注意</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%90%8C%E6%AD%A5-RS-%E8%A7%A6%E5%8F%91%E5%99%A8"><span class="toc-number">6.3.</span> <span class="toc-text">同步 RS 触发器</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%90%8C%E6%AD%A5-D-%E8%A7%A6%E5%8F%91%E5%99%A8"><span class="toc-number">6.4.</span> <span class="toc-text">同步 D 触发器</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%90%8C%E6%AD%A5JK%E8%A7%A6%E5%8F%91%E5%99%A8"><span class="toc-number">6.5.</span> <span class="toc-text">同步JK触发器</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%97%A0%E7%A9%BA%E7%BF%BB%E8%A7%A6%E5%8F%91%E5%99%A8"><span class="toc-number">6.6.</span> <span class="toc-text">无空翻触发器</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%BB%E4%BB%8E%E4%B8%8E%E8%BE%B9%E6%B2%BF%E8%A7%A6%E5%8F%91%E5%99%A8%E7%9A%84%E5%BC%82%E5%90%8C%E7%82%B9"><span class="toc-number">6.6.1.</span> <span class="toc-text">主从与边沿触发器的异同点</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%BE%B9%E6%B2%BFJK%E8%A7%A6%E5%8F%91%E5%99%A8"><span class="toc-number">6.7.</span> <span class="toc-text">边沿JK触发器</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%BE%B9%E6%B2%BFD%E8%A7%A6%E5%8F%91%E5%99%A8"><span class="toc-number">6.8.</span> <span class="toc-text">边沿D触发器</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%80%BB%E7%BB%93"><span class="toc-number">6.9.</span> <span class="toc-text">总结</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%80%E4%BA%9B%E9%A2%98%E7%9B%AE%E4%BB%A5%E5%8F%8A%E8%AF%A6%E8%A7%A3-3"><span class="toc-number">6.10.</span> <span class="toc-text">一些题目以及详解</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%85%AB%E3%80%81%E6%97%B6%E5%BA%8F%E9%80%BB%E8%BE%91%E7%94%B5%E8%B7%AF"><span class="toc-number">7.</span> <span class="toc-text">八、时序逻辑电路</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%90%8C%E6%AD%A5%E6%97%B6%E5%BA%8F%E7%94%B5%E8%B7%AF%E7%9A%84%E5%88%86%E6%9E%90"><span class="toc-number">7.1.</span> <span class="toc-text">同步时序电路的分析</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%9B%86%E6%88%90%E5%8F%8C%E5%90%91%E7%A7%BB%E4%BD%8D%E5%AF%84%E5%AD%98%E5%99%A8-74LS194"><span class="toc-number">7.2.</span> <span class="toc-text">集成双向移位寄存器 74LS194</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%BA%94%E7%94%A8"><span class="toc-number">7.2.1.</span> <span class="toc-text">应用</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%8E%AF%E5%BD%A2%E8%AE%A1%E6%95%B0%E5%99%A8%EF%BC%88%E9%A1%BA%E5%BA%8F%E8%84%89%E5%86%B2%E5%8F%91%E7%94%9F%E5%99%A8%EF%BC%89%E4%B8%8D%E8%83%BD%E8%87%AA%E5%90%AF%E5%8A%A8"><span class="toc-number">7.2.1.1.</span> <span class="toc-text">环形计数器（顺序脉冲发生器）不能自启动</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%89%AD%E7%8E%AF%E5%BD%A2%E8%AE%A1%E6%95%B0%E5%99%A8%EF%BC%88%E7%BA%A6%E7%BF%B0%E9%80%8A%E8%AE%A1%E6%95%B0%E5%99%A8%EF%BC%89%E5%8F%AF%E4%BB%A5%E8%87%AA%E5%90%AF%E5%8A%A8"><span class="toc-number">7.2.1.2.</span> <span class="toc-text">扭环形计数器（约翰逊计数器）可以自启动</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%90%8C%E6%AD%A5%E8%AE%A1%E6%95%B0%E5%99%A8"><span class="toc-number">7.3.</span> <span class="toc-text">同步计数器</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%9B%86%E6%88%90%E5%90%8C%E6%AD%A5%E4%BA%8C%E8%BF%9B%E5%88%B6%E8%AE%A1%E6%95%B0%E5%99%A8-74LS161-%E5%92%8C-74LS163"><span class="toc-number">7.4.</span> <span class="toc-text">集成同步二进制计数器 74LS161 和 74LS163</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%9B%86%E6%88%90%E5%90%8C%E6%AD%A5%E4%BA%8C%E8%BF%9B%E5%88%B6%E5%8A%A0-%E5%87%8F%E8%AE%A1%E6%95%B0%E5%99%A874LS191"><span class="toc-number">7.5.</span> <span class="toc-text">集成同步二进制加&#x2F;减计数器74LS191</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%9B%86%E6%88%90%E5%90%8C%E6%AD%A5%E5%8D%81%E8%BF%9B%E5%88%B6%E5%8A%A0%E6%B3%95%E8%AE%A1%E6%95%B0%E5%99%A874LS160%E5%92%8C74LS162"><span class="toc-number">7.6.</span> <span class="toc-text">集成同步十进制加法计数器74LS160和74LS162</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#SSI-%E5%BC%82%E6%AD%A5%E4%BA%8C%E8%BF%9B%E5%88%B6%E8%AE%A1%E6%95%B0%E5%99%A8"><span class="toc-number">7.7.</span> <span class="toc-text">SSI 异步二进制计数器</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BB%BB%E6%84%8F%E8%BF%9B%E5%88%B6%E8%AE%A1%E6%95%B0%E5%99%A8%E7%9A%84%E6%9E%84%E6%88%90%E6%96%B9%E6%B3%95"><span class="toc-number">7.8.</span> <span class="toc-text">任意进制计数器的构成方法</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%80%E4%BA%9B%E9%A2%98%E7%9B%AE%E4%BB%A5%E5%8F%8A%E8%AF%A6%E8%A7%A3-4"><span class="toc-number">7.9.</span> <span class="toc-text">一些题目以及详解</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%8D%81%E3%80%81%E5%8D%8A%E5%AF%BC%E4%BD%93%E5%AD%98%E5%82%A8%E5%99%A8"><span class="toc-number">8.</span> <span class="toc-text">十、半导体存储器</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%8D%81%E4%BA%8C%E3%80%81%E5%8F%AF%E7%BC%96%E7%A8%8B%E9%80%BB%E8%BE%91%E5%99%A8%E4%BB%B6%E5%8F%8A%E5%85%B6%E5%BA%94%E7%94%A8"><span class="toc-number">9.</span> <span class="toc-text">十二、可编程逻辑器件及其应用</span></a></li></ol></div></div></div></aside><main class="sidebar-translate" id="content"><div id="post"><article class="post-block" itemscope itemtype="https://schema.org/Article"><link itemprop="mainEntityOfPage" href="http://www.blog.yln956.top/2021/04/19/%E6%95%B0%E7%94%B5/"><span hidden itemprop="author" itemscope itemtype="https://schema.org/Person"><meta itemprop="name" content="yln"><meta itemprop="description"></span><span hidden itemprop="publisher" itemscope itemtype="https://schema.org/Organization"><meta itemprop="name" content="yln'blog"></span><header class="post-header"><h1 class="post-title" itemprop="name headline">数电</h1><div class="post-meta"><div class="post-time" style="display:block"><span class="post-meta-item-icon"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-calendar-line"></use></svg></span> <time title="创建时间：2021-04-19 10:56:40" itemprop="dateCreated datePublished" datetime="2021-04-19T10:56:40+08:00">2021-04-19</time></div><span class="post-count"><span class="post-symbolcount"><span class="post-meta-item-icon" title="本文字数"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-file-word-line"></use></svg></span> <span title="本文字数">2.3k</span><span class="post-meta-divider">-</span><span class="post-meta-item-icon" title="阅读时长"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-timer-line"></use></svg></span> <span title="阅读时长">8m</span></span></span><span class="post-busuanzi"><span class="post-meta-divider">-</span><span class="post-meta-item-icon" title="阅读次数"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-eye-line"></use></svg> <span id="busuanzi_value_page_pv"></span></span></span><div class="post-classify"><span class="post-category"> <span class="post-meta-item-icon" style="margin-right:3px;"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-folder-line"></use></svg></span><span itemprop="about" itemscope itemtype="https://schema.org/Thing"><a class="category" href="/categories/%E6%95%B0%E7%94%B5/" style="--text-color:var(--hty-text-color)" itemprop="url" rel="index"><span itemprop="text">数电</span></a></span></span><span class="post-tag"><span class="post-meta-divider">-</span><a class="tag" href="/tags/%E5%A4%8D%E4%B9%A0/" style="--text-color:var(--hty-text-color)"><span class="post-meta-item-icon"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-price-tag-3-line"></use></svg></span><span class="tag-name">复习</span></a></span></div></div></header><section class="post-body" itemprop="articleBody"><div class="post-content markdown-body" style="--smc-primary:#0078E7;"><p>数电大题基本固定，弄会就没啥问题了</p>
+<h1 id="一、概述"><a href="#一、概述" class="headerlink" title="一、概述"></a>一、概述</h1><h2 id="一些应用"><a href="#一些应用" class="headerlink" title="一些应用"></a>一些应用</h2><p><img src="/2021/04/19/%E6%95%B0%E7%94%B5/image-20210605113057712.png" alt="image-20210605113057712" loading="lazy"></p>
+<h2 id="模拟与数字"><a href="#模拟与数字" class="headerlink" title="模拟与数字"></a>模拟与数字</h2><ul>
+<li><p>模拟信号：时间上和幅度上都<strong>连续</strong>变化的信号</p>
+</li>
+<li><p>数字信号：时间上和幅度上都<strong>断续</strong>变化的信号</p>
+</li>
+<li><p>数字逻辑电路研究的两大任务是:<strong>分析、设计</strong></p>
+</li>
+<li><p>根据一个电路有无记忆功能，数字逻辑电路可以分为<strong>组合逻辑电路</strong>和<strong>时序逻辑电路</strong>两种类型。</p>
+</li>
+</ul>
+<h1 id="二、数制与码制"><a href="#二、数制与码制" class="headerlink" title="二、数制与码制"></a>二、数制与码制</h1><h2 id="进制转换（应该都会吧）"><a href="#进制转换（应该都会吧）" class="headerlink" title="进制转换（应该都会吧）"></a>进制转换（应该都会吧）</h2><p><img src="/2021/04/19/%E6%95%B0%E7%94%B5/image-20210605114143612.png" alt="image-20210605114143612" loading="lazy"></p>
+<h2 id="编码"><a href="#编码" class="headerlink" title="编码"></a>编码</h2><ul>
+<li>编码：按一定的方式将0、1数码进行编排来表示特定的含义,这种方式称为编码。</li>
+<li>用4位_二进制数来表示1位十进制数的代码,称为BCD码。</li>
+<li>格雷码，余三码都是无权码。</li>
+</ul>
+<p><img src="/2021/04/19/%E6%95%B0%E7%94%B5/image-20210605114436414.png" alt="image-20210605114436414" loading="lazy"></p>
+<h3 id="二-十进制码"><a href="#二-十进制码" class="headerlink" title="二-十进制码"></a>二-十进制码</h3><p><img src="/2021/04/19/%E6%95%B0%E7%94%B5/image-20210605114627618.png" alt="image-20210605114627618" loading="lazy"></p>
+<h3 id="奇偶校验码"><a href="#奇偶校验码" class="headerlink" title="奇偶校验码"></a>奇偶校验码</h3><p><img src="/2021/04/19/%E6%95%B0%E7%94%B5/image-20210605131631714.png" alt="image-20210605131631714" loading="lazy"></p>
+<h3 id="格雷码"><a href="#格雷码" class="headerlink" title="格雷码"></a>格雷码</h3><p><img src="/2021/04/19/%E6%95%B0%E7%94%B5/image-20210605131659789.png" alt="image-20210605131659789" loading="lazy"></p>
+<h2 id="原码、反码和补码"><a href="#原码、反码和补码" class="headerlink" title="原码、反码和补码"></a>原码、反码和补码</h2><p>原码：二进制数。符号部分用0表示“+”， 用1表示“-”</p>
+<p>反码：正数与原码相同，负数就是各位取反（除符号位）。</p>
+<p><img src="/2021/04/19/%E6%95%B0%E7%94%B5/image-20210605133155190.png" alt="image-20210605133155190" loading="lazy"></p>
+<p>补码：正数与原码相同，负数就是反码基础上末尾加1（符号位不变）。</p>
+<p><img src="/2021/04/19/%E6%95%B0%E7%94%B5/image-20210606002509311.png" alt="image-20210606002509311" loading="lazy"></p>
+<h2 id="一些题目以及详解"><a href="#一些题目以及详解" class="headerlink" title="一些题目以及详解"></a>一些题目以及详解</h2><p><img src="/2021/04/19/%E6%95%B0%E7%94%B5/image-20210608233949955.png" alt="image-20210608233949955" loading="lazy"></p>
+<p><img src="/2021/04/19/%E6%95%B0%E7%94%B5/image-20210608234023034.png" alt="image-20210608234023034" loading="lazy"></p>
+<p><img src="/2021/04/19/%E6%95%B0%E7%94%B5/image-20210608234044547.png" alt="image-20210608234044547" loading="lazy"></p>
+<p><img src="/2021/04/19/%E6%95%B0%E7%94%B5/image-20210608234106581.png" alt="image-20210608234106581" loading="lazy"></p>
+<h1 id="三、逻辑代数基础"><a href="#三、逻辑代数基础" class="headerlink" title="三、逻辑代数基础"></a>三、逻辑代数基础</h1><ul>
+<li>同一逻辑问题分别用正负逻辑定义其输入与输出之间的逻辑代数式，则这两个逻辑代数式之间的关系为对偶。</li>
+<li></li>
+</ul>
+<h2 id="逻辑符号对照（这个要看的懂会画）"><a href="#逻辑符号对照（这个要看的懂会画）" class="headerlink" title="逻辑符号对照（这个要看的懂会画）"></a>逻辑符号对照（这个要看的懂会画）</h2><p>与，或，非，异或。</p>
+<p><img src="/2021/04/19/%E6%95%B0%E7%94%B5/image-20210607010305035.png" alt="image-20210607010305035" loading="lazy"></p>
+<h2 id="逻辑代数的基本定律"><a href="#逻辑代数的基本定律" class="headerlink" title="逻辑代数的基本定律"></a>逻辑代数的基本定律</h2><p><img src="/2021/04/19/%E6%95%B0%E7%94%B5/image-20210607010734760.png" alt="image-20210607010734760" loading="lazy"></p>
+<p><img src="/2021/04/19/%E6%95%B0%E7%94%B5/image-20210607010748653.png" alt="image-20210607010748653" loading="lazy"></p>
+<p><img src="/2021/04/19/%E6%95%B0%E7%94%B5/image-20210607010851110.png" alt="image-20210607010851110" loading="lazy"></p>
+<h2 id="逻辑函数的表示"><a href="#逻辑函数的表示" class="headerlink" title="逻辑函数的表示"></a>逻辑函数的表示</h2><ul>
+<li>真值表</li>
+<li>逻辑图</li>
+<li>卡诺图</li>
+<li>逻辑代数式</li>
+</ul>
+<p>最小项（与或式），最大项（或与式）</p>
+<h3 id="重要规则"><a href="#重要规则" class="headerlink" title="重要规则"></a>重要规则</h3><p>代入规则</p>
+<p>反演规则：运算顺序不变，+变*，变量取反</p>
+<p>对偶规则：运算顺序不变，+变*</p>
+<h2 id="逻辑函数的化简方法"><a href="#逻辑函数的化简方法" class="headerlink" title="逻辑函数的化简方法"></a>逻辑函数的化简方法</h2><h3 id="公式法化简"><a href="#公式法化简" class="headerlink" title="公式法化简"></a>公式法化简</h3><ul>
+<li>并项法</li>
+</ul>
+<p><img src="/2021/04/19/%E6%95%B0%E7%94%B5/image-20210607012517276.png" alt="image-20210607012517276" loading="lazy"></p>
+<ul>
+<li>吸收法</li>
+</ul>
+<p><img src="/2021/04/19/%E6%95%B0%E7%94%B5/image-20210607012545593.png" alt="image-20210607012545593" loading="lazy"></p>
+<ul>
+<li>消去法</li>
+</ul>
+<p><img src="/2021/04/19/%E6%95%B0%E7%94%B5/image-20210607012610883.png" alt="image-20210607012610883" loading="lazy"></p>
+<ul>
+<li>配项法</li>
+</ul>
+<p><img src="/2021/04/19/%E6%95%B0%E7%94%B5/image-20210607012622099.png" alt="image-20210607012622099" loading="lazy"></p>
+<ul>
+<li>以上方法综合运用</li>
+</ul>
+<h3 id="卡诺图化简"><a href="#卡诺图化简" class="headerlink" title="卡诺图化简"></a>卡诺图化简</h3><p>不再累述，注意几点。</p>
+<ul>
+<li>包围圈要越大越少。</li>
+<li>包围圈圈的数目为（1，2，4，8……2^n）</li>
+<li>同一列最上边和最下边循环相邻，可画圈；       </li>
+<li>同一行最左边和最右边循环相邻，可画圈；</li>
+<li>四个角上的 1 （或0）方格也循环相邻，可画圈。 </li>
+<li>注意无关项。（和正常画法是一样的）</li>
+<li>化简成最简与或式对”1“画包围圈。</li>
+<li>化简成最简或与式对”0“画包围圈。</li>
+</ul>
+<h2 id="一些题目以及详解-1"><a href="#一些题目以及详解-1" class="headerlink" title="一些题目以及详解"></a>一些题目以及详解</h2><p><img src="/2021/04/19/%E6%95%B0%E7%94%B5/image-20210609000208323.png" alt="image-20210609000208323" loading="lazy"></p>
+<p><img src="/2021/04/19/%E6%95%B0%E7%94%B5/image-20210609000219999.png" alt="image-20210609000219999" loading="lazy"></p>
+<p><img src="/2021/04/19/%E6%95%B0%E7%94%B5/image-20210609000250191.png" alt="image-20210609000250191" loading="lazy"></p>
+<p><img src="/2021/04/19/%E6%95%B0%E7%94%B5/image-20210609000318137.png" alt="image-20210609000318137" loading="lazy"></p>
+<p><img src="/2021/04/19/%E6%95%B0%E7%94%B5/image-20210609000331189.png" alt="image-20210609000331189" loading="lazy"></p>
+<p><img src="/2021/04/19/%E6%95%B0%E7%94%B5/image-20210609000349331.png" alt="image-20210609000349331" loading="lazy"></p>
+<p><img src="/2021/04/19/%E6%95%B0%E7%94%B5/image-20210609000404083.png" alt="image-20210609000404083" loading="lazy"></p>
+<p><img src="/2021/04/19/%E6%95%B0%E7%94%B5/image-20210609005958127.png" alt="image-20210609005958127" loading="lazy"></p>
+<p><img src="/2021/04/19/%E6%95%B0%E7%94%B5/image-20210609010007518.png" alt="image-20210609010007518" loading="lazy"></p>
+<p><img src="/2021/04/19/%E6%95%B0%E7%94%B5/image-20210609010027691.png" alt="image-20210609010027691" loading="lazy"></p>
+<p><img src="/2021/04/19/%E6%95%B0%E7%94%B5/image-20210609010038910.png" alt="image-20210609010038910" loading="lazy"></p>
+<p><img src="/2021/04/19/%E6%95%B0%E7%94%B5/image-20210609010052606.png" alt="image-20210609010052606" loading="lazy"></p>
+<p><img src="/2021/04/19/%E6%95%B0%E7%94%B5/image-20210609010108445.png" alt="image-20210609010108445" loading="lazy"></p>
+<p><img src="/2021/04/19/%E6%95%B0%E7%94%B5/image-20210609010122974.png" alt="image-20210609010122974" loading="lazy"></p>
+<p><img src="/2021/04/19/%E6%95%B0%E7%94%B5/image-20210609010130045.png" alt="image-20210609010130045" loading="lazy"></p>
+<p><img src="/2021/04/19/%E6%95%B0%E7%94%B5/image-20210609010145593.png" alt="image-20210609010145593" loading="lazy"></p>
+<p><img src="/2021/04/19/%E6%95%B0%E7%94%B5/image-20210609010216822.png" alt="image-20210609010216822" loading="lazy"></p>
+<p><img src="/2021/04/19/%E6%95%B0%E7%94%B5/image-20210609010227985.png" alt="image-20210609010227985" loading="lazy"></p>
+<p><img src="/2021/04/19/%E6%95%B0%E7%94%B5/image-20210609010247731.png" alt="image-20210609010247731" loading="lazy"></p>
+<h1 id="四、VHDL"><a href="#四、VHDL" class="headerlink" title="四、VHDL"></a>四、VHDL</h1><ul>
+<li>VHDL是超高速集成电路硬件描述语言</li>
+<li>进程中的变量赋值语句,其变量赋值是立即完成的</li>
+<li>变量赋值( :=)：立即赋值</li>
+<li>信号赋值(&lt;=)：在进程的最后才对信号赋值</li>
+<li>当在同一进程中，同一信号赋值目标有多个赋值源时，信号赋值目标获得的是最后一个赋值源的赋值</li>
+<li>相对于传统的软件描述语言，并行语句结构是最具VHDL特色的</li>
+<li>顺序语句：IF,CASE,LOOP,NEXT,EXIT,WAIT,RETURN,NULL</li>
+<li>简单信号赋值语句、条件信号赋值语句和选择信号赋值语句。<br> 这三种信号赋值语句的共同点是：赋值目标必须都是信号。</li>
+<li>VHDL的描述方式有行为描述、数据流描述和结构描述。</li>
+<li>一个设计实体可以拥有一个或多个结构体。</li>
+<li>VHDL语言结构由库，程序包，实体，结构体，配置5个部分组成</li>
+</ul>
+<p><img src="/2021/04/19/%E6%95%B0%E7%94%B5/image-20210608003914653.png" alt="image-20210608003914653" loading="lazy"></p>
+<h1 id="六、组合逻辑电路"><a href="#六、组合逻辑电路" class="headerlink" title="六、组合逻辑电路"></a>六、组合逻辑电路</h1><ul>
+<li>半加器没有接收进位的输入端，全加器有进位输入端，它们两个都是有进位输出端的</li>
+<li>与4位串行进位加法器比较,使用超前进位加法器的目的是提高运算速度</li>
+<li>既考虑低位进位,又考虑向高位进位,应选用全加器。</li>
+<li>二进制译码器是全译码器</li>
+<li>二-十进制译码器输入信号和输出信号分别是<strong>4</strong>位和<strong>10</strong>位。</li>
+<li>16选1数据选择器的地址端有4位。</li>
+<li>当七段显示译码器的输出为<strong>高电平</strong>有效时,应选用共<strong>阴</strong>极数码管。</li>
+<li>对于共<strong>阳</strong>接法的半导体数码显示器,应采用<strong>低电平</strong>驱动的七段显示译码器。</li>
+<li>能将输入信号转变成二进制代码的电路称为编码器。</li>
+<li>编码器在任何时刻只能对一个输入信号进行编码。</li>
+<li>普通编码器在任何时刻只允许一个输入端请求编码，否则输出发生混乱。</li>
+<li>优先编码器允许同时输入数个编码信号，并只对其中优先权最高的信号进行编码输出的电路。</li>
+<li>多路数据选择器的输入信号可以是数字信号和模拟信号</li>
+<li>16选1数据选择器的输入信号、地址码和输出信号分别是16位、4位和1位。</li>
+<li>4路数据分配器输入信号、地址码和输出信号分别是1位、2位和4位。</li>
+</ul>
+<p><img src="/2021/04/19/%E6%95%B0%E7%94%B5/image-20210610085054069.png" alt="image-20210610085054069" loading="lazy"></p>
+<h2 id="半加器"><a href="#半加器" class="headerlink" title="半加器"></a>半加器</h2><p><img src="/2021/04/19/%E6%95%B0%E7%94%B5/image-20210610012739204.png" alt="image-20210610012739204" loading="lazy"></p>
+<h2 id="全加器"><a href="#全加器" class="headerlink" title="全加器"></a>全加器</h2><p><img src="/2021/04/19/%E6%95%B0%E7%94%B5/image-20210610012750990.png" alt="image-20210610012750990" loading="lazy"></p>
+<h2 id="3-线-－-8-线译码器-CT74LS138"><a href="#3-线-－-8-线译码器-CT74LS138" class="headerlink" title="3 线 － 8 线译码器 CT74LS138"></a>3 线 － 8 线译码器 CT74LS138</h2><p><img src="/2021/04/19/%E6%95%B0%E7%94%B5/image-20210610012904211.png" alt="image-20210610012904211" loading="lazy"></p>
+<p><img src="/2021/04/19/%E6%95%B0%E7%94%B5/image-20210610012942711.png" alt="image-20210610012942711" loading="lazy"></p>
+<h2 id="双-4-选-1-数据选择器-CC74HC153"><a href="#双-4-选-1-数据选择器-CC74HC153" class="headerlink" title="双 4 选 1 数据选择器 CC74HC153"></a>双 4 选 1 数据选择器 CC74HC153</h2><p><img src="/2021/04/19/%E6%95%B0%E7%94%B5/image-20210610085758987.png" alt="image-20210610085758987" loading="lazy"></p>
+<p><img src="/2021/04/19/%E6%95%B0%E7%94%B5/image-20210610085810283.png" alt="image-20210610085810283" loading="lazy"></p>
+<p><img src="/2021/04/19/%E6%95%B0%E7%94%B5/image-20210610085819674.png" alt="image-20210610085819674" loading="lazy"></p>
+<h2 id="8-选-1-数据选择器-CT74LS151"><a href="#8-选-1-数据选择器-CT74LS151" class="headerlink" title="8 选 1 数据选择器 CT74LS151"></a>8 选 1 数据选择器 CT74LS151</h2><p><img src="/2021/04/19/%E6%95%B0%E7%94%B5/image-20210610090132171.png" alt="image-20210610090132171" loading="lazy"></p>
+<p><img src="/2021/04/19/%E6%95%B0%E7%94%B5/image-20210610090226919.png" alt="image-20210610090226919" loading="lazy"></p>
+<p><img src="/2021/04/19/%E6%95%B0%E7%94%B5/image-20210610090238572.png" alt="image-20210610090238572" loading="lazy"></p>
+<h2 id="MSI的组合逻辑电路的分析与设计"><a href="#MSI的组合逻辑电路的分析与设计" class="headerlink" title="MSI的组合逻辑电路的分析与设计"></a>MSI的组合逻辑电路的分析与设计</h2><h2 id="竞争和冒险"><a href="#竞争和冒险" class="headerlink" title="竞争和冒险"></a>竞争和冒险</h2><ul>
+<li>逻辑门因输入端的竞争而导致输出产生不应有的尖峰干扰脉冲的现象，称为冒险。</li>
+<li>同一个门的一组输入信号，由于它们在此前通过不同数目的门，经过不同长度导线的传输，到达门输入端的时间会有先有后，这种现象称为竞争。</li>
+</ul>
+<p>消除冒险的方法:<br>1.加封锁脉冲<br>2.加选通脉冲<br>3.修改逻辑设计<br>4.接入滤波电容</p>
+<h2 id="一些题目以及详解-2"><a href="#一些题目以及详解-2" class="headerlink" title="一些题目以及详解"></a>一些题目以及详解</h2><p><img src="/2021/04/19/%E6%95%B0%E7%94%B5/image-20210609010327742.png" alt="image-20210609010327742" loading="lazy"></p>
+<p><img src="/2021/04/19/%E6%95%B0%E7%94%B5/image-20210609010345454.png" alt="image-20210609010345454" loading="lazy"></p>
+<p><img src="/2021/04/19/%E6%95%B0%E7%94%B5/image-20210609010355340.png" alt="image-20210609010355340" loading="lazy"></p>
+<p><img src="/2021/04/19/%E6%95%B0%E7%94%B5/image-20210609010417569.png" alt="image-20210609010417569" loading="lazy"></p>
+<p><img src="/2021/04/19/%E6%95%B0%E7%94%B5/image-20210609010426191.png" alt="image-20210609010426191" loading="lazy"></p>
+<p><img src="/2021/04/19/%E6%95%B0%E7%94%B5/image-20210609010443574.png" alt="image-20210609010443574" loading="lazy"></p>
+<p><img src="/2021/04/19/%E6%95%B0%E7%94%B5/image-20210609010453701.png" alt="image-20210609010453701" loading="lazy"></p>
+<p><img src="/2021/04/19/%E6%95%B0%E7%94%B5/image-20210609010522661.png" alt="image-20210609010522661" loading="lazy"></p>
+<p><img src="/2021/04/19/%E6%95%B0%E7%94%B5/image-20210609010532640.png" alt="image-20210609010532640" loading="lazy"></p>
+<p><img src="/2021/04/19/%E6%95%B0%E7%94%B5/image-20210609010559567.png" alt="image-20210609010559567" loading="lazy"></p>
+<p><img src="/2021/04/19/%E6%95%B0%E7%94%B5/image-20210609010610866.png" alt="image-20210609010610866" loading="lazy"></p>
+<h1 id="七、集成触发器"><a href="#七、集成触发器" class="headerlink" title="七、集成触发器"></a>七、集成触发器</h1><ul>
+<li><p>同步触发器的主要缺点是有空翻现象</p>
+</li>
+<li><p>触发器属于双稳态电路,存在两个稳定状态,从而可存储、记忆1位二进制数据。</p>
+</li>
+<li><p>触发器和门电路是构成数字电路的基本单元。</p>
+</li>
+<li><p>触发器有记忆功能，由它构成的电路在某时刻的输出不仅取决于该时刻的输入，还与电路原来状态有关。而门电路无记忆功能，由它构成的电路在某时刻的输出完全取决于该时刻的输入，与电路原来状态无关；</p>
+</li>
+</ul>
+<h2 id="触发器的类型"><a href="#触发器的类型" class="headerlink" title="触发器的类型"></a>触发器的类型</h2><p><img src="/2021/04/19/%E6%95%B0%E7%94%B5/image-20210610092311171.png" alt="image-20210610092311171" loading="lazy"></p>
+<h2 id="基本RS触发器"><a href="#基本RS触发器" class="headerlink" title="基本RS触发器"></a>基本RS触发器</h2><p>RS为00禁用，11保持，相异为R,01置0，10置1</p>
+<p><img src="/2021/04/19/%E6%95%B0%E7%94%B5/image-20210610092808818.png" alt="image-20210610092808818" loading="lazy"></p>
+<p><img src="/2021/04/19/%E6%95%B0%E7%94%B5/image-20210610094000415.png" alt="image-20210610094000415" loading="lazy"></p>
+<p><img src="/2021/04/19/%E6%95%B0%E7%94%B5/image-20210610094153311.png" alt="image-20210610094153311" loading="lazy"></p>
+<p><img src="/2021/04/19/%E6%95%B0%E7%94%B5/image-20210610094400722.png" alt="image-20210610094400722" loading="lazy"></p>
+<p><img src="/2021/04/19/%E6%95%B0%E7%94%B5/image-20210610094413914.png" alt="image-20210610094413914" loading="lazy"></p>
+<h3 id="注意"><a href="#注意" class="headerlink" title="注意"></a>注意</h3><p><img src="/2021/04/19/%E6%95%B0%E7%94%B5/image-20210610095448717.png" alt="image-20210610095448717" loading="lazy"></p>
+<h2 id="同步-RS-触发器"><a href="#同步-RS-触发器" class="headerlink" title="同步 RS 触发器"></a>同步 RS 触发器</h2><p><img src="/2021/04/19/%E6%95%B0%E7%94%B5/image-20210610100442903.png" alt="image-20210610100442903" loading="lazy"></p>
+<p><img src="/2021/04/19/%E6%95%B0%E7%94%B5/image-20210610100502897.png" alt="image-20210610100502897" loading="lazy"></p>
+<h2 id="同步-D-触发器"><a href="#同步-D-触发器" class="headerlink" title="同步 D 触发器"></a>同步 D 触发器</h2><p><img src="/2021/04/19/%E6%95%B0%E7%94%B5/image-20210610102305346.png" alt="image-20210610102305346" loading="lazy"></p>
+<p><img src="/2021/04/19/%E6%95%B0%E7%94%B5/image-20210610103103775.png" alt="image-20210610103103775" loading="lazy"></p>
+<h2 id="同步JK触发器"><a href="#同步JK触发器" class="headerlink" title="同步JK触发器"></a>同步JK触发器</h2><ul>
+<li>K = 00 时保持； JK = 11 时翻转； J K相异 时 Qn+1 值与 J 相同。</li>
+</ul>
+<p><img src="/2021/04/19/%E6%95%B0%E7%94%B5/image-20210610103124958.png" alt="image-20210610103124958" loading="lazy"></p>
+<p><img src="/2021/04/19/%E6%95%B0%E7%94%B5/image-20210610103135349.png" alt="image-20210610103135349" loading="lazy"></p>
+<h2 id="无空翻触发器"><a href="#无空翻触发器" class="headerlink" title="无空翻触发器"></a>无空翻触发器</h2><p><img src="/2021/04/19/%E6%95%B0%E7%94%B5/image-20210610103828532.png" alt="image-20210610103828532" loading="lazy"></p>
+<h3 id="主从与边沿触发器的异同点"><a href="#主从与边沿触发器的异同点" class="headerlink" title="主从与边沿触发器的异同点"></a>主从与边沿触发器的异同点</h3><p><img src="/2021/04/19/%E6%95%B0%E7%94%B5/image-20210610104024669.png" alt="image-20210610104024669" loading="lazy"></p>
+<h2 id="边沿JK触发器"><a href="#边沿JK触发器" class="headerlink" title="边沿JK触发器"></a>边沿JK触发器</h2><p><img src="/2021/04/19/%E6%95%B0%E7%94%B5/image-20210610105136697.png" alt="image-20210610105136697" loading="lazy"></p>
+<p><img src="/2021/04/19/%E6%95%B0%E7%94%B5/image-20210610105150187.png" alt="image-20210610105150187" loading="lazy"></p>
+<h2 id="边沿D触发器"><a href="#边沿D触发器" class="headerlink" title="边沿D触发器"></a>边沿D触发器</h2><p><img src="/2021/04/19/%E6%95%B0%E7%94%B5/image-20210610105537422.png" alt="image-20210610105537422" loading="lazy"></p>
+<p><img src="/2021/04/19/%E6%95%B0%E7%94%B5/image-20210610110820675.png" alt="image-20210610110820675" loading="lazy"></p>
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p><img src="/2021/04/19/%E6%95%B0%E7%94%B5/image-20210610120316073.png" alt="image-20210610120316073" loading="lazy"></p>
+<h2 id="一些题目以及详解-3"><a href="#一些题目以及详解-3" class="headerlink" title="一些题目以及详解"></a>一些题目以及详解</h2><p><img src="/2021/04/19/%E6%95%B0%E7%94%B5/image-20210609005759873.png" alt="image-20210609005759873" loading="lazy"></p>
+<p><img src="/2021/04/19/%E6%95%B0%E7%94%B5/image-20210609005814797.png" alt="image-20210609005814797" loading="lazy"></p>
+<p><img src="/2021/04/19/%E6%95%B0%E7%94%B5/image-20210609005827835.png" alt="image-20210609005827835" loading="lazy"></p>
+<h1 id="八、时序逻辑电路"><a href="#八、时序逻辑电路" class="headerlink" title="八、时序逻辑电路"></a>八、时序逻辑电路</h1><h2 id="同步时序电路的分析"><a href="#同步时序电路的分析" class="headerlink" title="同步时序电路的分析"></a>同步时序电路的分析</h2><p><img src="/2021/04/19/%E6%95%B0%E7%94%B5/image-20210610123149829.png" alt="image-20210610123149829" loading="lazy"></p>
+<h2 id="集成双向移位寄存器-74LS194"><a href="#集成双向移位寄存器-74LS194" class="headerlink" title="集成双向移位寄存器 74LS194"></a>集成双向移位寄存器 74LS194</h2><p><img src="/2021/04/19/%E6%95%B0%E7%94%B5/image-20210610123247275.png" alt="image-20210610123247275" loading="lazy"></p>
+<p><img src="/2021/04/19/%E6%95%B0%E7%94%B5/image-20210610123259064.png" alt="image-20210610123259064" loading="lazy"></p>
+<h3 id="应用"><a href="#应用" class="headerlink" title="应用"></a>应用</h3><h4 id="环形计数器（顺序脉冲发生器）不能自启动"><a href="#环形计数器（顺序脉冲发生器）不能自启动" class="headerlink" title="环形计数器（顺序脉冲发生器）不能自启动"></a>环形计数器（顺序脉冲发生器）不能自启动</h4><p>顺序脉冲：只在每个循环周期内，在时间上按一定顺序排列的脉冲信号<br>产生顺序脉冲信号的电路称为顺序脉冲发生器<br>在数字系统中，常用来控制某些设备按照事先规定的顺序进行计算或操作<br>缺点：电路状态利用率不高</p>
+<h4 id="扭环形计数器（约翰逊计数器）可以自启动"><a href="#扭环形计数器（约翰逊计数器）可以自启动" class="headerlink" title="扭环形计数器（约翰逊计数器）可以自启动"></a>扭环形计数器（约翰逊计数器）可以自启动</h4><p>将寄存器的输出以状态取反的方式反馈到移位输入端，即构成扭环形计数器</p>
+<h2 id="同步计数器"><a href="#同步计数器" class="headerlink" title="同步计数器"></a>同步计数器</h2><p><img src="/2021/04/19/%E6%95%B0%E7%94%B5/image-20210610123534820.png" alt="image-20210610123534820" loading="lazy"></p>
+<h2 id="集成同步二进制计数器-74LS161-和-74LS163"><a href="#集成同步二进制计数器-74LS161-和-74LS163" class="headerlink" title="集成同步二进制计数器 74LS161 和 74LS163"></a>集成同步二进制计数器 74LS161 和 74LS163</h2><p><img src="/2021/04/19/%E6%95%B0%E7%94%B5/image-20210610124458800.png" alt="image-20210610124458800" loading="lazy"></p>
+<p><img src="/2021/04/19/%E6%95%B0%E7%94%B5/image-20210610124542516.png" alt="image-20210610124542516" loading="lazy"></p>
+<p><img src="/2021/04/19/%E6%95%B0%E7%94%B5/image-20210610124835317.png" loading="lazy"></p>
+<h2 id="集成同步二进制加-减计数器74LS191"><a href="#集成同步二进制加-减计数器74LS191" class="headerlink" title="集成同步二进制加/减计数器74LS191"></a>集成同步二进制加/减计数器74LS191</h2><p><img src="/2021/04/19/%E6%95%B0%E7%94%B5/image-20210610124620313.png" alt="image-20210610124620313" loading="lazy"></p>
+<h2 id="集成同步十进制加法计数器74LS160和74LS162"><a href="#集成同步十进制加法计数器74LS160和74LS162" class="headerlink" title="集成同步十进制加法计数器74LS160和74LS162"></a>集成同步十进制加法计数器74LS160和74LS162</h2><p><img src="/2021/04/19/%E6%95%B0%E7%94%B5/image-20210610124655285.png" alt="image-20210610124655285" loading="lazy"></p>
+<p><img src="/2021/04/19/%E6%95%B0%E7%94%B5/image-20210610124804453.png" alt="image-20210610124804453" loading="lazy"></p>
+<h2 id="SSI-异步二进制计数器"><a href="#SSI-异步二进制计数器" class="headerlink" title="SSI 异步二进制计数器"></a>SSI 异步二进制计数器</h2><p><img src="/2021/04/19/%E6%95%B0%E7%94%B5/image-20210610124926602.png" alt="image-20210610124926602" loading="lazy"></p>
+<h2 id="任意进制计数器的构成方法"><a href="#任意进制计数器的构成方法" class="headerlink" title="任意进制计数器的构成方法"></a>任意进制计数器的构成方法</h2><p>反馈清零</p>
+<p>反馈置数</p>
+<h2 id="一些题目以及详解-4"><a href="#一些题目以及详解-4" class="headerlink" title="一些题目以及详解"></a>一些题目以及详解</h2><p><img src="/2021/04/19/%E6%95%B0%E7%94%B5/image-20210609010636148.png" alt="image-20210609010636148" loading="lazy"></p>
+<p><img src="/2021/04/19/%E6%95%B0%E7%94%B5/image-20210609010702018.png" alt="image-20210609010702018" loading="lazy"></p>
+<p><img src="/2021/04/19/%E6%95%B0%E7%94%B5/image-20210609010720877.png" alt="image-20210609010720877" loading="lazy"></p>
+<p><img src="/2021/04/19/%E6%95%B0%E7%94%B5/image-20210609010735691.png" alt="image-20210609010735691" loading="lazy"></p>
+<p><img src="/2021/04/19/%E6%95%B0%E7%94%B5/image-20210609010745738.png" alt="image-20210609010745738" loading="lazy"></p>
+<p><img src="/2021/04/19/%E6%95%B0%E7%94%B5/image-20210609010757248.png" alt="image-20210609010757248" loading="lazy"></p>
+<p><img src="/2021/04/19/%E6%95%B0%E7%94%B5/image-20210609010809027.png" alt="image-20210609010809027" loading="lazy"></p>
+<p><img src="/2021/04/19/%E6%95%B0%E7%94%B5/image-20210609010819469.png" alt="image-20210609010819469" loading="lazy"></p>
+<p><img src="/2021/04/19/%E6%95%B0%E7%94%B5/image-20210609010836711.png" alt="image-20210609010836711" loading="lazy"></p>
+<p><img src="/2021/04/19/%E6%95%B0%E7%94%B5/image-20210609010845782.png" alt="image-20210609010845782" loading="lazy"></p>
+<h1 id="十、半导体存储器"><a href="#十、半导体存储器" class="headerlink" title="十、半导体存储器"></a>十、半导体存储器</h1><ul>
+<li>半导体存储器的作用：存放二值数据</li>
+<li>按制造工艺分类：双极型，MOS型</li>
+<li>按存取方式不同：半导体存储器可分成只读存储器ROM、随机存取存储器RAM和顺序存取存储器SAM。</li>
+<li>可擦除可编程只读存储器EPROM,电可擦除的可编程存储器EEPROM。</li>
+<li>PROM单次编程（熔丝）</li>
+<li>半导体存储器容量表示：一般用“字数 x字长(即位数)”表示。</li>
+</ul>
+<p>例如，例如，一个 32 x 8 的 ROM，表示它有 32 个字，字长为 8 位，存储容量是 32 x 8 = 256。</p>
+<p>1 M = 1024 K = 2^10 K = 2^20B</p>
+<ul>
+<li><p><img src="/2021/04/19/%E6%95%B0%E7%94%B5/image-20210609012207565.png" alt="image-20210609012207565" loading="lazy"></p>
+</li>
+</ul>
+<h1 id="十二、可编程逻辑器件及其应用"><a href="#十二、可编程逻辑器件及其应用" class="headerlink" title="十二、可编程逻辑器件及其应用"></a>十二、可编程逻辑器件及其应用</h1><ul>
+<li>可编程逻辑器件是指可以通过软件手段更改、配置器件内部连接结构和逻辑单元，完成既定设计功能的数字集成电路</li>
+<li>FPGA数据掉电后丢失，CPLD掉电保持</li>
+<li>CPLD:复杂可编程逻辑器件</li>
+<li>基本逻辑单元是CPLD的主体</li>
+<li>FPGA:现场可编程门阵列</li>
+<li>FPGA的基本结构都是基于查找表加寄存器结构的</li>
+<li>任何组合逻辑电路都可以用“与门-或门”二级电路实现</li>
+<li>任何时序逻辑电路都可以由组合逻辑电路加上存储元件</li>
+</ul>
+<p><img src="/2021/04/19/%E6%95%B0%E7%94%B5/image-20210610172907541.png" alt="image-20210610172907541" loading="lazy"></p>
+<p><img src="/2021/04/19/%E6%95%B0%E7%94%B5/image-20210610172951896.png" alt="image-20210610172951896" loading="lazy"></p>
+</div><div id="reward-container"><span class="hty-icon-button button-glow" id="reward-button" title="打赏" onclick="var qr = document.getElementById(&quot;qr&quot;); qr.style.display = (qr.style.display === &quot;none&quot;) ? &quot;block&quot; : &quot;none&quot;;"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-hand-coin-line"></use></svg></span><div id="reward-comment">我很可爱，请给我钱.</div><div id="qr" style="display:none;"><div style="display:inline-block"><a href="/images/zfb.png"><img loading="lazy" src="/images/zfb.png" alt="支付宝" title="支付宝"></a><div><span style="color:#00A3EE"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-alipay-line"></use></svg></span></div></div><div style="display:inline-block"><a href="/images/qq.png"><img loading="lazy" src="/images/qq.png" alt="QQ 支付" title="QQ 支付"></a><div><span style="color:#12B7F5"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-qq-line"></use></svg></span></div></div><div style="display:inline-block"><a href="/images/wx.png"><img loading="lazy" src="/images/wx.png" alt="微信支付" title="微信支付"></a><div><span style="color:#2DC100"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-wechat-pay-line"></use></svg></span></div></div></div></div><ul class="post-copyright"><li class="post-copyright-author"><strong>本文作者：</strong>yln</li><li class="post-copyright-link"><strong>本文链接：</strong><a href="http://www.blog.yln956.top/2021/04/19/%E6%95%B0%E7%94%B5/" title="数电">http://www.blog.yln956.top/2021/04/19/%E6%95%B0%E7%94%B5/</a></li><li class="post-copyright-license"><strong>版权声明：</strong>本博客所有文章除特别声明外，均默认采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank" rel="noopener" title="CC BY-NC-SA 4.0 "><svg class="icon"><use xlink:href="#icon-creative-commons-line"></use></svg><svg class="icon"><use xlink:href="#icon-creative-commons-by-line"></use></svg><svg class="icon"><use xlink:href="#icon-creative-commons-nc-line"></use></svg><svg class="icon"><use xlink:href="#icon-creative-commons-sa-line"></use></svg></a> 许可协议。</li></ul></section></article><div class="post-nav"><div class="post-nav-item"></div><div class="post-nav-item"><a class="post-nav-next" href="/2021/03/07/jiaocheng/" rel="next" title="教程"><span class="post-nav-text">教程</span><svg class="icon" aria-hidden="true"><use xlink:href="#icon-arrow-right-s-line"></use></svg></a></div></div></div></main><footer class="sidebar-translate" id="footer"><div class="beian"><a rel="noopener" href="https://beian.miit.gov.cn/" target="_blank">琼ICP备20000687号</a></div><div class="copyright"><span>&copy; 2020 – 2022 </span><span class="with-love" id="animate"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-cloud-line"></use></svg></span><span class="author"> yln</span></div><div class="live_time"><span>本博客已萌萌哒地运行</span><span id="display_live_time"></span><span class="moe-text">(●'◡'●)</span><script>function blog_live_time() {
+  setTimeout(blog_live_time, 1000);
+  const start = new Date('2020-11-05T00:00:00');
+  const now = new Date();
+  const timeDiff = (now.getTime() - start.getTime());
+  const msPerMinute = 60 * 1000;
+  const msPerHour = 60 * msPerMinute;
+  const msPerDay = 24 * msPerHour;
+  const passDay = Math.floor(timeDiff / msPerDay);
+  const passHour = Math.floor((timeDiff % msPerDay) / 60 / 60 / 1000);
+  const passMinute = Math.floor((timeDiff % msPerHour) / 60 / 1000);
+  const passSecond = Math.floor((timeDiff % msPerMinute) / 1000);
+  display_live_time.innerHTML = " " + passDay + " 天 " + passHour + " 小时 " + passMinute + " 分 " + passSecond + " 秒";
+}
+blog_live_time();
+</script></div><div id="busuanzi"><script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><span id="busuanzi_container_site_uv" title="总访客量"><span><svg class="icon" aria-hidden="true"><use xlink:href="#icon-user-line"></use></svg></span><span id="busuanzi_value_site_uv"></span></span><span class="footer-separator">|</span><span id="busuanzi_container_site_pv" title="总访问量"><span><svg class="icon" aria-hidden="true"><use xlink:href="#icon-eye-line"></use></svg></span><span id="busuanzi_value_site_pv"></span></span></div></footer><a class="hty-icon-button" id="goUp" aria-label="back-to-top" href="#"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-arrow-up-s-line"></use></svg><svg class="progress-circle-container" viewBox="0 0 100 100"><circle class="progress-circle" id="progressCircle" cx="50" cy="50" r="48" fill="none" stroke="#0078E7" stroke-width="2" stroke-linecap="round"></circle></svg></a><a class="popup-trigger hty-icon-button icon-search" id="search" href="javascript:;" title="搜索"><span class="site-state-item-icon"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-search-line"></use></svg></span></a><script>window.addEventListener("DOMContentLoaded", () => {
+  // Handle and trigger popup window
+  document.querySelector(".popup-trigger").addEventListener("click", () => {
+    document.querySelector(".popup").classList.add("show");
+    setTimeout(() => {
+      document.querySelector(".search-input").focus();
+    }, 100);
+  });
+
+  // Monitor main search box
+  const onPopupClose = () => {
+    document.querySelector(".popup").classList.remove("show");
+  };
+
+  document.querySelector(".popup-btn-close").addEventListener("click", () => {
+    onPopupClose();
+  });
+
+  window.addEventListener("keyup", event => {
+    if (event.key === "Escape") {
+      onPopupClose();
+    }
+  });
+});
+</script><script src="/js/search/local-search.js" defer></script><div class="popup search-popup"><div class="search-header"><span class="popup-btn-close close-icon hty-icon-button"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-close-line"></use></svg></span></div><div class="search-input-container"><input class="search-input" id="local-search-input" type="text" placeholder="想要搜些什么？" value=""></div><div id="local-search-result"></div></div><script>const date = new Date();
+const today = (date.getMonth() + 1) + "-" + date.getDate()
+const mourn_days = ["4-4","9-18"]
+if (mourn_days.includes(today)) {
+  document.documentElement.style.filter = "grayscale(1)";
+}</script><div class="aplayer no-destroy" id="aplayer" data-id="575498976" data-server="netease" data-type="playlist" data-fixed="true" data-theme="#0078E7" data-loop="all" data-order="list" data-preload="auto" data-volume="0.7" data-mutex data-lrctype="0" data-listmaxheight="340px" data-storagename="metingjs"></div></div><script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"jsonPath":"/live2dw/assets/koharu.model.json"},"display":{"position":"left","width":100,"height":300},"mobile":{"show":true},"log":false});</script></body></html>
